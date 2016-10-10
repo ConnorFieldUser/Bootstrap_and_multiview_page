@@ -4,6 +4,17 @@ from __future__ import unicode_literals
 
 from django.db import migrations
 
+from fan_app.models import Instructor
+
+
+Instructor.objects.create(firstname="Joel", lastname="Taddei", wholename="Joel Taddei", projects="3",
+                          favorite_food="Pizza", least_favorite_pet="Dog", favorite_pet="Not_dog",
+                          current_residence="He_secretly_lives_on_campus", current_location="nearby",
+                          favorite_color="Purple", favorite_duet="What's going on", favorite_student="Conner",
+                          quality_of_jokes="10 out of ?", favorite_coding_laguage="Python", joeltaddie=True,
+                          least_favorite_food="not piza", least_favorite_color="green", planned_app="tinder_for_pizza",
+                          mood="Creeped out(probably)")
+
 
 class Migration(migrations.Migration):
 
