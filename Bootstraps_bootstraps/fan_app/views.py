@@ -6,6 +6,5 @@ from fan_app.models import Instructor
 
 def index_view(request):
     context = {
-        "start": "start"
     }
-    return render(request, 'index.html', context)
+    return render(request, "index.html", context)
