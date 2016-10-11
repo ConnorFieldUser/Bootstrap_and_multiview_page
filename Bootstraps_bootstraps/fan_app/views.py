@@ -12,7 +12,7 @@ def index_view(request):
 
 def joels_info_view(request):
     context = {
-        "joel": Instructor.objects.filter(firstname="Joel", lastname="Taddei")
+        "joel": Instructor.objects.get(firstname="Joel")
     }
     return render(request, "joels_info.html", context)
 
