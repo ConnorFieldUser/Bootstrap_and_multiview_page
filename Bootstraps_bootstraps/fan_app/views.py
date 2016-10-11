@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-# from fan_app.models import Instructor
+from fan_app.models import Instructor
 
 
 def index_view(request):
@@ -12,6 +12,7 @@ def index_view(request):
 
 def joels_info_view(request):
     context = {
+        "joel": Instructor.objects.filter(firstname="Joel", lastname="Taddei")
     }
     return render(request, "joels_info.html", context)
 
