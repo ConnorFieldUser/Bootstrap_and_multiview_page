@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from fan_app.views import index_view
+from fan_app.views import index_view, joels_info_view, my_info_view, about_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index_view)
+    url(r'^$', index_view),
+    url(r"^joels_info/", joels_info_view, name="joels_info_view"),
+    url(r"^my_info/", my_info_view, name="my_info_view"),
+    url(r"^about/", about_view, name="about_view")
 ]

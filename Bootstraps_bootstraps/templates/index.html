@@ -3,22 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>TADDEIMANIA</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
-  <body style="background-color:purple">
+  <body style="background-color:purple; margin: 10; padding: 10">
 
-    <div class="jumbotron"; style="background-color:purple"=>
+    <div class="jumbotron"; style="background-color:yellow"=>
       <h1 style="color:red">TADDEIMANIA</h1>
-      <p style="color:red">My Fan Site</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      <p style="color:red; font-weight:bold">My Fan Site</p>
+      <p><a class="btn btn-primary btn-lg" href="{% url 'about_view' %}" role="button">Learn more</a></p>
     </div>
-<h1 style="color:red">
-TADDEIMANIA
-</h1>
+
+    <img src="https://avatars3.githubusercontent.com/u/1627744?v=3&s=466" alt="JOEL" />
+
+<h3 style="color:yellow">
+  This is my fan site where I keep all my gathered<br>
+  information about <span style="font-weight: bold; font-size: 250%">JOEL</span>
+</h3>
+
 <nav aria-label="...">
   <ul class="pager">
-    <li><a href="#">Previous</a></li>
-    <li><a href="#">Next</a></li>
+    <li><a href="{% url 'joels_info_view' %}">Joels info</a></li>
+    <li><a href="{% url 'my_info_view' %}">My info</a></li>
   </ul>
 </nav>
 
