@@ -7,28 +7,34 @@
   </head>
   <body style="background-color: purple">
 
+<h1 style="color:yellow; text-decoration:underline">Joels Info Page</h1>
 
 
 <p stle="color=yellow">
   <ul style="color:yellow">
-    NAME:
+    <h2>NAME:</h2>
   <li>First name: {{ joel.firstname }}</li>
   <li>Last name: {{ joel. }}</li>
   <li>{{ joel.wholename }}</li>
-  LOCATION
-  <li>Cuurent location: {{ joel.current_location }}</li>
+  <h2>LOCATION</h2>
+  <li>Curent location: {{ joel.current_location }}</li>
   <li>Current Residence: {{ joel.current_residence }}</li>
-  COLORS:
-  <li>{{ joel.favorite_color }}</li>
-  <li>{{ joel.least_favorite_color }}</li>
-  PETS & FOOD:
-<li>{{ joel.favorite_pet }}</li>
-<li>{{ joel.least_favorite_pet }}</li>
-<li>{{ joel.favorite_food }}</li>
-<li>{{ joel.least_favorite_food }}</li>
-  {{ joel. }}
-  {{ joel. }}
-  </ul>
+  <h2>COLORS:</h2>
+  <li>Favorite color:: {{ joel.favorite_color }}</li>
+  <li>Least favorite color: {{ joel.least_favorite_color }}</li>
+  <h2>PETS & FOOD: </h2>
+<li>Favorite pet: {{ joel.favorite_pet }}</li>
+<li>Least favorite pet: {{ joel.least_favorite_pet }}</li>
+<li>Favorite food: {{ joel.favorite_food }}</li>
+<li>Least favorite food: {{ joel.least_favorite_food }}</li>
+<h2>OTHER:</h2>
+  <li>Favorite student: {{ joel.favorite_student }}</li>
+  <li>Favorite duet: {{ joel.favorite_duet }}</li>
+  <li>Favorite coding laguage: {{ joel.favorite_coding_laguage }}</li>
+<li>Next project: {{ joel.planned_app }}</li>
+  <li>Mood: {{ joel.mood }}</li>
+<li>Quality of jokes: {{ joel.quality_of_jokes }}
+</ul>
 </p>
 
       {% for thing in everything %}
